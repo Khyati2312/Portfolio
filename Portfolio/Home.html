@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khyati's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 11, 72);
+            font-size: 25px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            font-size: 3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            top: 100px;
+            width: 90%;
+            height: 70%;
+            margin: 0px 900;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .horizontal-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .horizontal-item {
+            width: 30%;
+            background-color: rgb(11, 11, 72);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px white;
+        }
+
+        .horizontal-item h2 {
+            color: rgb(170, 107, 228);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .horizontal-item p,
+        .horizontal-item ul {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .horizontal-item ul {
+            padding-left: 20px;
+        }
+
+        .horizontal-item ul li {
+            list-style-type: disc;
+        }
+
+        .horizontal-item .header {
+            font-size: 35px;
+        }
+
+        .horizontal-item .font {
+            font-size: 23px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgb(170, 107, 228);
+        }
+
+        button[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: rgb(11, 11, 72);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            background-color: rgb(26, 26, 128);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 20px 30px;
+            background-color: rgb(11, 11, 72);
+            color: white;
+            border: 2px;
+            border-radius: 5px;
+            font-size: 25px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .sec {
+            font-size: 30px;
+        }
+
+        .rightSection.image {
+            height: 900px;
+            width: 900px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(11, 11, 72);
+            color: white;
+        }
+
+        footer a {
+            color: rgb(153, 153, 226);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Khyati Gandhi</span>
+                and <br>I am a passionate <br>
+                <span id="element"></span><br><br>
+                <div class="button-container">
+                    <a href="Khyati Intern Resume.pdf" download="Khyati's Portfolio.pdf" class="btn">Download Resume</a>
+                    <button class="btn" onclick="window.location.href='https://github.com/your-github-profile';">
+                        <u>Visit GitHub</u>
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img class="image" src="Port pic.jpeg" alt="">
+            </div>
+        </section>
+        </hr>
+
+        <!-- Second Section -->
+        <section class="secondSection">
+            <div class="horizontal-layout">
+                <!-- About Section -->
+                <div class="horizontal-item" id="about">
+                    <h2 class="header">About</h2><br>
+                    <p class="font">I am a web developer with a passion for creating beautiful and functional
+                        websites.<br><br>
+                        With a strong background in both design and coding, I strive to bring ideas to life through
+                        intuitive and engaging user experiences.</p>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="horizontal-item" id="projects">
+                    <h2 class="header">Projects</h2><br>
+                    <ul class="font">
+                        <li>Registration Form</li><br>
+                        <li>Ayurveda Website</li><br>
+                        <li>Train Booking Website</li><br>
+                        <li>Portfolio Website</li><br>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div class="horizontal-item" id="services">
+                    <h2 class="header">Services</h2><br>
+                    <ul class="font">
+                        <li>Website Design & Development:<br> Crafting modern and responsive websites tailored to your
+                            needs.</li><br>
+                        <li>Responsive Web Design: Ensuring your website looks great on all devices, from desktops to
+                            mobile phones.</li><br>
+                        <li>Content Management: Offering solutions for easy content updates and management.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="secondSection">
+            <div class="horizontal-layout">
+                <div class="horizontal-item" style="width: 100%; text-align: center;">
+                    <h2 class="header">Contact Me</h2>
+                    <form action="https://formspree.io/f/yourformid" method="POST" style="margin-top: 20px;">
+                        <div class="form-group">
+                            <label for="name" class="font">Name:</label><br>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email" class="font">Email:</label><br>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="message" class="font">Message:</label><br>
+                            <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+                        </div><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main><br><br>
+    <footer>
+        <p> Khyati Gandhi.</p>
+        <p>Contact No:- 7046489076</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> |
+             |
+            View my projects on <a href="https://github.com/your-github-profile" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Typing effect in the Home section
+        const typedTextSpan = document.getElementById("element");
+        const textArray = ["Web Developer,", "Web Designer ", " & Coder."];
+        const typingDelay = 50;
+        const erasingDelay = 30;
+        const newTextDelay = 20; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+    </script>
+</body>
+
+</html>

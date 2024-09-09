@@ -1,0 +1,148 @@
+<html>
+<head>
+    <title>Khyati's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 11, 72);
+            font-size: 25px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            font-size: 3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            width: 60%; /* Ensure left section takes up more space */
+        }
+
+        .rightSection {
+            width: 40%; /* Ensure right section takes up the rest */
+        }
+
+        .rightSection img {
+            width: 100%;
+            height: auto; /* Ensure the image takes up the full width and maintains aspect ratio */
+            display: block; /* Remove any possible inline space */
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        h1 {
+            padding: 2px 145px;
+            margin: 30px 0;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(11, 11, 72); 
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Khyati Gandhi</span>
+                <div>and I am a passionate <span id="element"></span></div>
+                <div class="button-container">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pic.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+        
+        <section class="secondSection">
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
